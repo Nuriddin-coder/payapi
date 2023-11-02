@@ -1,0 +1,39 @@
+.hero__title {
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px; /* 100% */
+  letter-spacing: -0.431px;
+  max-width: 730px;
+  padding-left: 95px;
+}
+.contact__title {
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px; /* 100% */
+  letter-spacing: -0.431px;
+  max-width: 730px;
+  // padding-top: 30px;
+}
+
+
+///// ============ responsive  =======================////
+
+ @media screen and (max-width: 760px) {
+    .hero__title {
+        text-align: center;
+        font-size: 46px;
+        padding-left: 0;
+    }
+ }
+
+ @media screen and (max-width: 675px) {
+    .hero__title {
+        text-align: center;
+        font-size: 32px;
+        padding-left: 0;
+    }
+ }

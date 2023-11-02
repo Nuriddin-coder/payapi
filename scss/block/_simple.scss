@@ -1,0 +1,71 @@
+
+.simple {
+    padding-bottom: 150px;
+}
+
+.simple_img {
+  display: flex;
+  column-gap: 40px;
+}
+
+.simple__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simple_des {
+    max-width: 445px;
+}
+
+.simple_des__title {
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -0.369px;
+}
+
+.simple_des__text {
+  color: #6c8294;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
+}
+
+///// ======================== responsive ==================================
+
+ @media screen and (max-width: 1030px) {
+    .simple__container {
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+
+    .simple_des {
+        text-align: center;
+    }
+
+    .simple_des__text {
+        padding-top: 24px;
+    }
+ }
+
+ @media screen and (max-width: 675px) {
+    .simple_img {
+        // flex-direction: column;
+        column-gap: 15  px;
+    }
+
+    .simple_img__item {
+        max-width: 170px;
+        height: 290px;
+    }
+
+    .simple_des__title {
+        font-size: 36px;
+    }
+ }

@@ -1,0 +1,81 @@
+.header {
+  padding-top: 45px;
+}
+
+.dote {
+  background-repeat: no-repeat;
+  background-image: url('../../img/hero_vector.png');
+  background-position: right top;
+  background-size: 640px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_main {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+}
+
+.header_main__logo {
+  margin-right: 20px;
+}
+
+.header__btn {
+  color: #fbfcfe;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.115px;
+
+  padding: 15px 25px;
+  border-radius: 24px;
+  background-color: #ba4270;
+  border: none;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  transition: 0.2s;
+
+
+  &:hover {
+    background-color: #da6d97;
+    transition: 0.3s;
+  }
+}
+
+.header__menu {
+  background-color: transparent;
+  display: none;
+}
+
+.header__link {
+  color: #36536b;
+  font-family: Public Sans;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+///// ========================= responsive  =============================///
+ 
+@media screen and (max-width: 760px) {
+  .header__btn {
+    display: none;
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .header__menu {
+    display: inline-block;
+  }
+}
